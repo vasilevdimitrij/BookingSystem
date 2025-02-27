@@ -1,5 +1,8 @@
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
+using SimpleBookingSystem.API.Middleware;
 using SimpleBookingSystem.Application.Services;
+using SimpleBookingSystem.Application.Validation;
 using SimpleBookingSystem.Domain.Interfaces;
 using SimpleBookingSystem.Infrastructure;
 using SimpleBookingSystem.Infrastructure.Repositories;
@@ -20,7 +23,10 @@ builder.Services.AddScoped<IBookingRepository, BookingRepository>();
 builder.Services.AddScoped<IResourceService, ResourceService>();
 builder.Services.AddScoped<IBookingService, BookingService>();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ResourceValidator>())
+    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<BookingValidator>());
+
 
 
 
@@ -36,6 +42,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 app.MapControllers();
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 
 
 

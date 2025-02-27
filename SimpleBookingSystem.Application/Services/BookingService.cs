@@ -16,10 +16,10 @@ namespace SimpleBookingSystem.Application.Services
             _resourceRepository = resourceRepository;
         }
 
-        public async Task<string> BookResourceAsync(int resourceId, int quantity, DateTime startTime, DateTime endTime)
+        public async Task<Booking> BookResourceAsync(int resourceId, int quantity, DateTime startTime, DateTime endTime)
         {
             if (!await _bookingRepository.IsResourceAvailable(resourceId, quantity, startTime, endTime))
-                return "Resource is not available for the selected time and quantity.";
+                throw new ArgumentException("Resource is not available for the selected time and quantity.");
 
             var booking = new Booking
             {
@@ -29,8 +29,7 @@ namespace SimpleBookingSystem.Application.Services
                 EndTime = endTime
             };
 
-            await _bookingRepository.AddBookingAsync(booking);
-            return $"Booking successful! Booking ID: {booking.Id}";
+            return await _bookingRepository.AddBookingAsync(booking);
         }
     }
 }

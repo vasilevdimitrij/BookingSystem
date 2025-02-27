@@ -19,8 +19,8 @@ namespace SimpleBookingSystem.Infrastructure.Repositories
         public async Task<bool> IsResourceAvailable(int resourceId, int quantity, DateTime startTime, DateTime endTime)
         {
             var existingBookings = await _context.Bookings
-                .Where(b => b.ResourceId == resourceId && 
-                            b.EndTime > startTime && 
+                .Where(b => b.ResourceId == resourceId &&
+                            b.EndTime > startTime &&
                             b.StartTime < endTime)
                 .ToListAsync();
 
@@ -30,10 +30,11 @@ namespace SimpleBookingSystem.Infrastructure.Repositories
             return (availableQuantity - bookedQuantity) >= quantity;
         }
 
-        public async Task AddBookingAsync(Booking booking)
+        public async Task<Booking> AddBookingAsync(Booking booking)
         {
             await _context.Bookings.AddAsync(booking);
             await _context.SaveChangesAsync();
+            return booking;
         }
     }
 }

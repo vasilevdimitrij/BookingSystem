@@ -29,14 +29,14 @@ namespace SimpleBookingSystem.Application.Services
             await _resourceRepository.AddResourceAsync(resource);
         }
 
-        // public async Task UpdateResourceAsync(Resource resource)
-        // {
-        //     await _resourceRepository.UpdateResourceAsync(resource);
-        // }
+        public async Task UpdateResourceAsync(Resource resource)
+        {
+            await _resourceRepository.UpdateResourceAsync(resource);
+        }
 
-        // public async Task DeleteResourceAsync(int id)
-        // {
-        //     await _resourceRepository.DeleteResourceAsync(id);
-        // }
+        public async Task DeleteResourceAsync(int id)
+        {
+            await _resourceRepository.DeleteResourceAsync(id);
+        }
     }
 }

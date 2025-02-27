@@ -22,7 +22,12 @@ namespace SimpleBookingSystem.Infrastructure.Repositories
 
         public async Task<Resource> GetResourceByIdAsync(int id)
         {
-            return await _context.Resources.FindAsync(id);
+            var resource = await _context.Resources.FirstOrDefaultAsync(x => x.Id == id);
+            if (resource == null)
+            {
+                throw new KeyNotFoundException($"Resource with Id {id} not found.");
+            }
+            return resource;
         }
 
         public async Task AddResourceAsync(Resource resource)
@@ -33,7 +38,15 @@ namespace SimpleBookingSystem.Infrastructure.Repositories
 
         public async Task UpdateResourceAsync(Resource resource)
         {
+            var existingResource = await _context.Resources.AsNoTracking().FirstOrDefaultAsync(x => x.Id == resource.Id);
+
+            if (existingResource is null)
+            {
+                throw new KeyNotFoundException($"Resource with Id {resource.Id} not found.");
+            }
+            _context.Resources.Attach(resource);
             _context.Resources.Update(resource);
+
             await _context.SaveChangesAsync();
         }
 
@@ -44,6 +57,10 @@ namespace SimpleBookingSystem.Infrastructure.Repositories
             {
                 _context.Resources.Remove(resource);
                 await _context.SaveChangesAsync();
+            }
+            else
+            {
+                throw new KeyNotFoundException($"Resource with Id {id} not found.");
             }
         }
     }

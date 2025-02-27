@@ -1,10 +1,11 @@
 using System;
 using System.Threading.Tasks;
+using SimpleBookingSystem.Domain.Entities;
 
 namespace SimpleBookingSystem.Domain.Interfaces
 {
     public interface IBookingService
     {
-        Task<string> BookResourceAsync(int resourceId, int quantity, DateTime startTime, DateTime endTime);
+        Task<Booking> BookResourceAsync(int resourceId, int quantity, DateTime startTime, DateTime endTime);
     }
 }

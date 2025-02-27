@@ -9,7 +9,7 @@ namespace SimpleBookingSystem.Domain.Interfaces
         Task<IEnumerable<Resource>> GetAllResourcesAsync();
         Task<Resource> GetResourceByIdAsync(int id);
         Task AddResourceAsync(Resource resource);
-        // Task UpdateResourceAsync(Resource resource);
-        // Task DeleteResourceAsync(int id);
+        Task UpdateResourceAsync(Resource resource);
+        Task DeleteResourceAsync(int id);
     }
 }

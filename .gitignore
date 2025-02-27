@@ -1,0 +1,53 @@
+# ASP.NET Core related files
+bin/
+obj/
+*.user
+*.vspscc
+*.vssscc
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+.DS_Store
+
+# Environment & Secrets
+.env
+secrets.json
+appsettings.*.json
+
+# SQLite Database
+*.db
+*.db-journal
+
+# Entity Framework Migrations
+Migrations/
+efcache/
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.log
+*.bak
+*.cache
+*.swp
+*.zip
+*.tar.gz
+
+# Visual Studio specific
+.vs/
+*.csproj.user
+*.csproj.nuget.dgspec.json
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# Rider (JetBrains)
+.idea/
+*.iml
+
+# MacOS related
+._*
+*.DS_Store
+*.AppleDouble

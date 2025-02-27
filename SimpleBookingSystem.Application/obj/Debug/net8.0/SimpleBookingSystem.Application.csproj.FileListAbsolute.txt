@@ -1,0 +1,17 @@
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/bin/Debug/net8.0/SimpleBookingSystem.Application.deps.json
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/bin/Debug/net8.0/SimpleBookingSystem.Application.dll
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/bin/Debug/net8.0/SimpleBookingSystem.Application.pdb
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/bin/Debug/net8.0/SimpleBookingSystem.Domain.dll
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/bin/Debug/net8.0/SimpleBookingSystem.Infrastructure.dll
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/bin/Debug/net8.0/SimpleBookingSystem.Domain.pdb
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/bin/Debug/net8.0/SimpleBookingSystem.Infrastructure.pdb
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/obj/Debug/net8.0/SimpleBookingSystem.Application.csproj.AssemblyReference.cache
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/obj/Debug/net8.0/SimpleBookingSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/obj/Debug/net8.0/SimpleBookingSystem.Application.AssemblyInfoInputs.cache
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/obj/Debug/net8.0/SimpleBookingSystem.Application.AssemblyInfo.cs
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/obj/Debug/net8.0/SimpleBookingSystem.Application.csproj.CoreCompileInputs.cache
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/obj/Debug/net8.0/SimpleBookingSystem.Application.csproj.CopyComplete
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/obj/Debug/net8.0/SimpleBookingSystem.Application.dll
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/obj/Debug/net8.0/refint/SimpleBookingSystem.Application.dll
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/obj/Debug/net8.0/SimpleBookingSystem.Application.pdb
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Application/obj/Debug/net8.0/ref/SimpleBookingSystem.Application.dll

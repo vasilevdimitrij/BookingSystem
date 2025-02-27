@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "uoOzchcQzVsuqMwOIwmh+slNkZ7RCY3gtqucKydsgqg=",
+  "Source": "SimpleBookingSystem.API",
+  "BasePath": "_content/SimpleBookingSystem.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

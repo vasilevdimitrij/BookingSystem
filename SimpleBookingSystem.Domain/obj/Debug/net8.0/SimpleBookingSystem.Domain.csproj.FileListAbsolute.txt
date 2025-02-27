@@ -1,0 +1,11 @@
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Domain/bin/Debug/net8.0/SimpleBookingSystem.Domain.deps.json
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Domain/bin/Debug/net8.0/SimpleBookingSystem.Domain.dll
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Domain/bin/Debug/net8.0/SimpleBookingSystem.Domain.pdb
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Domain/obj/Debug/net8.0/SimpleBookingSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Domain/obj/Debug/net8.0/SimpleBookingSystem.Domain.AssemblyInfoInputs.cache
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Domain/obj/Debug/net8.0/SimpleBookingSystem.Domain.AssemblyInfo.cs
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Domain/obj/Debug/net8.0/SimpleBookingSystem.Domain.csproj.CoreCompileInputs.cache
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Domain/obj/Debug/net8.0/SimpleBookingSystem.Domain.dll
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Domain/obj/Debug/net8.0/refint/SimpleBookingSystem.Domain.dll
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Domain/obj/Debug/net8.0/SimpleBookingSystem.Domain.pdb
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Domain/obj/Debug/net8.0/ref/SimpleBookingSystem.Domain.dll

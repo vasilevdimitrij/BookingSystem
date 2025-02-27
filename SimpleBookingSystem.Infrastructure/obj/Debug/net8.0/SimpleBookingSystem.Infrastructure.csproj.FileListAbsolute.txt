@@ -1,0 +1,17 @@
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/bin/Debug/net8.0/SimpleBookingSystem.Infrastructure.deps.json
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/bin/Debug/net8.0/SimpleBookingSystem.Infrastructure.runtimeconfig.json
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/bin/Debug/net8.0/SimpleBookingSystem.Infrastructure.dll
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/bin/Debug/net8.0/SimpleBookingSystem.Infrastructure.pdb
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/bin/Debug/net8.0/SimpleBookingSystem.Domain.dll
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/bin/Debug/net8.0/SimpleBookingSystem.Domain.pdb
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/obj/Debug/net8.0/SimpleBookingSystem.Infrastructure.csproj.AssemblyReference.cache
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/obj/Debug/net8.0/SimpleBookingSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/obj/Debug/net8.0/SimpleBookingSystem.Infrastructure.AssemblyInfoInputs.cache
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/obj/Debug/net8.0/SimpleBookingSystem.Infrastructure.AssemblyInfo.cs
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/obj/Debug/net8.0/SimpleBookingSystem.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/obj/Debug/net8.0/SimpleBookingSystem.Infrastructure.csproj.CopyComplete
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/obj/Debug/net8.0/SimpleBookingSystem.Infrastructure.dll
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/obj/Debug/net8.0/refint/SimpleBookingSystem.Infrastructure.dll
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/obj/Debug/net8.0/SimpleBookingSystem.Infrastructure.pdb
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/obj/Debug/net8.0/SimpleBookingSystem.Infrastructure.genruntimeconfig.cache
+/Users/vasilevdimitrij/Documents/Projects/SimpleBookingSystem/SimpleBookingSystem.Infrastructure/obj/Debug/net8.0/ref/SimpleBookingSystem.Infrastructure.dll

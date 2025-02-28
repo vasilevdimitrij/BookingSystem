@@ -31,5 +31,10 @@ namespace SimpleBookingSystem.Application.Services
 
             return await _bookingRepository.AddBookingAsync(booking);
         }
+
+        public async Task<IEnumerable<Booking>> GetAllBookingsAsync()
+        {
+            return await _bookingRepository.GetAllBookingsAsync();
+        }
     }
 }

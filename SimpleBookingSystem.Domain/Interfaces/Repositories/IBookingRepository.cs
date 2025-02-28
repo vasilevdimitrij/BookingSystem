@@ -8,5 +8,7 @@ namespace SimpleBookingSystem.Domain.Interfaces
     {
         Task<bool> IsResourceAvailable(int resourceId, int quantity, DateTime startTime, DateTime endTime);
         Task<Booking> AddBookingAsync(Booking booking);
+        Task<IEnumerable<Booking>> GetAllBookingsAsync();
+
     }
 }

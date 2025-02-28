@@ -36,5 +36,11 @@ namespace SimpleBookingSystem.Infrastructure.Repositories
             await _context.SaveChangesAsync();
             return booking;
         }
+
+        public async Task<IEnumerable<Booking>> GetAllBookingsAsync()
+        {
+            return await _context.Bookings.ToListAsync();
+        }
+
     }
 }

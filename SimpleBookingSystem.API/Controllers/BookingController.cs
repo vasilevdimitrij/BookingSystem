@@ -29,5 +29,12 @@ namespace SimpleBookingSystem.API.Controllers
             var result = await _bookingService.BookResourceAsync(resourceId, quantity, startTime, endTime);
             return Ok(result);
         }
+
+        [HttpGet]
+        public async Task<IEnumerable<Booking>> GetBookings()
+        {
+            return await _bookingService.GetAllBookingsAsync();
+        }
+
     }
 }

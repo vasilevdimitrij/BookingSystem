@@ -27,8 +27,20 @@ builder.Services.AddControllers()
     .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ResourceValidator>())
     .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<BookingValidator>());
 
-
-
+builder.Services.AddCors(options =>
+options.AddPolicy("MyPolicy",
+    builder =>
+    {
+        builder
+            .WithOrigins(
+                "http://localhost:5173"
+                )
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials();
+    }
+)
+);
 
 var app = builder.Build();
 
@@ -41,12 +53,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseCors("MyPolicy");
 app.MapControllers();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-
-
-
 app.Run();
-
-

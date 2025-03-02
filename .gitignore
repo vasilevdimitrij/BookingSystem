@@ -21,10 +21,6 @@ appsettings.*.json
 *.db
 *.db-journal
 
-# Entity Framework Migrations
-Migrations/
-efcache/
-
 # Build artifacts
 *.dll
 *.exe

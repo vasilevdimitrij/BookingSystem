@@ -6,6 +6,5 @@ namespace BookingSystem.Domain.Interfaces
     {
         Task<Booking> BookResourceAsync(int resourceId, int quantity, DateTime startTime, DateTime endTime);
         Task<IEnumerable<Booking>> GetAllBookingsAsync();
-
     }
 }

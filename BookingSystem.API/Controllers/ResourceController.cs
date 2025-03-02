@@ -12,20 +12,17 @@ namespace BookingSystem.API.Controllers
         private readonly IResourceService _resourceService;
         private readonly ResourceValidator _resourceValidator;
 
-
         public ResourceController(IResourceService resourceService, ResourceValidator resourceValidator)
         {
             _resourceService = resourceService;
             _resourceValidator = resourceValidator;
         }
 
-
         [HttpGet]
         public async Task<IEnumerable<Resource>> GetResources()
         {
             return await _resourceService.GetAllResourcesAsync();
         }
-
 
         [HttpPost]
         public async Task<IActionResult> AddResource([FromBody] Resource resource)

@@ -1,9 +1,6 @@
-using System;
 using System.Net;
 using System.Text.Json;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
+using BookingSystem.Domain.Exceptions;
 
 namespace BookingSystem.API.Middleware
 {
@@ -42,9 +39,11 @@ namespace BookingSystem.API.Middleware
                 {
                     ArgumentException => (int)HttpStatusCode.BadRequest,
                     KeyNotFoundException => (int)HttpStatusCode.NotFound,
+                    ResourceQuantityException => (int)HttpStatusCode.BadRequest,
+                    BookingConflictException => (int)HttpStatusCode.Conflict,
                     _ => (int)HttpStatusCode.InternalServerError
                 },
-                message = exception.Message,
+                message = exception.Message
             };
 
             var errorJson = JsonSerializer.Serialize(errorResponse);

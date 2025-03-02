@@ -1,6 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Threading.Tasks;
 using BookingSystem.Domain.Interfaces;
 using BookingSystem.Application.Validation;
 using BookingSystem.Domain.Entities;

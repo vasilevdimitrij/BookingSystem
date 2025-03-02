@@ -1,6 +1,5 @@
-using System;
-using System.Threading.Tasks;
 using BookingSystem.Domain.Entities;
+using BookingSystem.Domain.Exceptions;
 using BookingSystem.Domain.Interfaces;
 
 namespace BookingSystem.Application.Services
@@ -18,8 +17,20 @@ namespace BookingSystem.Application.Services
 
         public async Task<Booking> BookResourceAsync(int resourceId, int quantity, DateTime startTime, DateTime endTime)
         {
+            var resource = await _resourceRepository.GetResourceByIdAsync(resourceId);
+
+            if (resource.Quantity < quantity)
+            {
+                throw new ResourceQuantityException("Not enough resource quantity available.");
+            }
+
             if (!await _bookingRepository.IsResourceAvailable(resourceId, quantity, startTime, endTime))
-                throw new ArgumentException("Resource is not available for the selected time and quantity.");
+            {
+                throw new BookingConflictException("Resource is not available for the selected time and quantity.");
+            }
+
+            resource.Quantity -= quantity;
+            await _resourceRepository.UpdateResourceAsync(resource);
 
             var booking = new Booking
             {

@@ -15,7 +15,7 @@ namespace BookingSystem.Infrastructure.Repositories
 
         public async Task<IEnumerable<Resource>> GetAllResourcesAsync()
         {
-            return await _context.Resources.ToListAsync();
+            return await _context.Resources.Where(x => x.Quantity > 0).ToListAsync();
         }
 
         public async Task<Resource> GetResourceByIdAsync(int id)

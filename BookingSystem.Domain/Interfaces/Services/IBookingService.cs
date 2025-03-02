@@ -1,5 +1,3 @@
-using System;
-using System.Threading.Tasks;
 using BookingSystem.Domain.Entities;
 
 namespace BookingSystem.Domain.Interfaces

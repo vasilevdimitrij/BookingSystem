@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using BookingSystem.Domain.Entities;
 using BookingSystem.Domain.Interfaces;
 

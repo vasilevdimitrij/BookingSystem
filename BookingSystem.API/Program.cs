@@ -6,6 +6,7 @@ using BookingSystem.Application.Validation;
 using BookingSystem.Domain.Interfaces;
 using BookingSystem.Infrastructure;
 using BookingSystem.Infrastructure.Repositories;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,9 +24,13 @@ builder.Services.AddScoped<IBookingRepository, BookingRepository>();
 builder.Services.AddScoped<IResourceService, ResourceService>();
 builder.Services.AddScoped<IBookingService, BookingService>();
 
-builder.Services.AddControllers()
-    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ResourceValidator>())
-    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<BookingValidator>());
+builder.Services.AddControllers();
+
+builder.Services.AddFluentValidationAutoValidation()
+    .AddFluentValidationClientsideAdapters();
+
+builder.Services.AddValidatorsFromAssemblyContaining<ResourceValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<BookingValidator>();
 
 builder.Services.AddCors(options =>
 options.AddPolicy("MyPolicy",

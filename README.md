@@ -152,11 +152,6 @@ dotnet add package FluentValidation.AspNetCore
 4. **Viewing Bookings**:
    - Use the GET `/api/bookings` endpoint to view all bookings.
 
----
-
-### License
-
-This project is licensed under the MIT License.
 
 
 
